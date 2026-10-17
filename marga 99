@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARGA 99</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 25px;
+  background: #151515;
+  border-bottom: 2px solid #ff2525;
+}
+
+.logo {
+  font-size: 38px;
+  font-weight: 900;
+  color: #ff2525;
+  text-shadow: 0 0 15px red;
+}
+
+header p {
+  color: #aaa;
+  margin-top: 8px;
+}
+
+.hero {
+  min-height: 400px;
+  padding: 90px 20px;
+  text-align: center;
+  background: radial-gradient(circle, #641010, #080808 75%);
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.hero h1 span {
+  color: #ff2525;
+}
+
+.hero p {
+  color: #ddd;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 25px;
+  background: #ff2525;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #bd0000;
+  transform: scale(1.05);
+}
+
+section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #ff2525;
+  margin-bottom: 20px;
+}
+
+.content {
+  max-width: 600px;
+  margin: auto;
+  background: #171717;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+  line-height: 1.8;
+}
+
+footer {
+  background: #151515;
+  text-align: center;
+  padding: 25px;
+  color: #999;
+  border-top: 1px solid #ff2525;
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 32px; }
+  .logo { font-size: 32px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MARGA 99</div>
+  <p>BERSAMA • SOLID • SATU KELUARGA</p>
+</header>
+
+<div class="hero">
+  <h1>WELCOME TO<br><span>MARGA 99</span></h1>
+  <p>
+    Selamat datang di halaman MARGA 99.<br>
+    Tempat berkumpul, berbagi, dan mempererat persaudaraan.
+  </p>
+
+  <a class="btn"
+     href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd"
+     target="_blank"
+     rel="noopener noreferrer">
+     GABUNG WHATSAPP
+  </a>
+</div>
+
+<section>
+  <h2>TENTANG MARGA 99</h2>
+  <div class="content">
+    MARGA 99 adalah komunitas untuk berkumpul,
+    menjalin pertemanan, dan membangun kebersamaan.
+    <br><br>
+    <strong>Satu nama, satu kebersamaan!</strong>
+  </div>
+</section>
+
+<section>
+  <h2>GABUNG SEKARANG</h2>
+  <div class="content">
+    Jangan sampai ketinggalan keseruannya.
+    Klik tombol di bawah untuk masuk ke grup WhatsApp
+    MARGA 99.
+    <br>
+    <a class="btn"
+       href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd"
+       target="_blank"
+       rel="noopener noreferrer">
+       JOIN MARGA 99
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 MARGA 99 • Komunitas Kita
+</footer>
+
+</body>
+</html>
