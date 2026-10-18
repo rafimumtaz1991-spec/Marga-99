@@ -2,186 +2,147 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MARGA 99 🔥</title>
 
 <style>
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
   background: #080808;
   color: white;
+  font-family: Arial, sans-serif;
 }
 
 header {
-  padding: 25px 15px;
-  text-align: center;
-  background: #111;
+  background: #101010;
   border-bottom: 2px solid #ff2020;
+  padding: 12px;
+  text-align: center;
 }
 
 .logo {
-  font-size: 42px;
-  font-weight: 900;
-  color: #ff2929;
-  text-shadow: 0 0 18px red;
-  letter-spacing: 3px;
+  width: 190px;
+  max-width: 65%;
+  height: auto;
+  object-fit: contain;
 }
 
 header p {
-  color: #bbb;
-  margin-top: 8px;
-  font-size: 12px;
-  letter-spacing: 2px;
+  color: #ccc;
+  font-size: 11px;
+  letter-spacing: 3px;
 }
 
 .hero {
-  padding: 65px 18px;
   text-align: center;
+  padding: 35px 16px 45px;
   background:
-    radial-gradient(ellipse at top, #641414, #080808 70%);
+    radial-gradient(ellipse, #481010, #080808 75%);
 }
 
-.tag {
-  display: inline-block;
-  padding: 8px 14px;
-  border: 1px solid #ff2929;
-  border-radius: 30px;
-  color: #ff5555;
-  font-size: 12px;
-  margin-bottom: 20px;
+.hero-logo {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 0 auto 20px;
 }
 
 .hero h1 {
-  font-size: 36px;
-  line-height: 1.3;
+  color: #ff2929;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
-.hero h1 span {
-  color: #ff2929;
-}
-
 .hero p {
-  color: #ccc;
   line-height: 1.8;
-}
-
-section {
-  padding: 30px 16px;
-}
-
-h2 {
-  color: #ff2929;
-  text-align: center;
-  margin-bottom: 22px;
-  font-size: 23px;
-}
-
-.box {
-  max-width: 550px;
-  margin: auto;
-  padding: 23px 18px;
-  background: #141414;
-  border: 1px solid #383838;
-  border-radius: 14px;
-  box-shadow: 0 0 18px #ff202010;
-}
-
-.recruit-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 1.7;
-  margin-bottom: 12px;
-}
-
-.recruit-title span {
-  color: #ff2929;
-}
-
-.desc {
-  text-align: center;
-  color: #ccc;
-  font-size: 14px;
-  margin-bottom: 20px;
-  line-height: 1.7;
-}
-
-.list {
-  list-style: none;
-}
-
-.list li {
-  padding: 11px 8px;
-  margin: 7px 0;
-  background: #202020;
-  border-left: 3px solid #ff2929;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.list li span {
-  color: #ff3939;
-  margin-right: 8px;
-}
-
-.join-text {
-  text-align: center;
-  font-weight: bold;
-  font-size: 17px;
-  margin-top: 22px;
-  line-height: 1.7;
+  color: #ddd;
 }
 
 .btn {
   display: block;
-  max-width: 320px;
-  margin: 18px auto 0;
+  max-width: 340px;
+  margin: 20px auto 0;
   padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 8px;
-  background: #ff2525;
+  background: #ed1010;
   color: white;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.btn:hover {
-  background: #c90000;
-  transform: scale(1.02);
-}
-
-.btn-secondary {
-  background: #202020;
-  border: 1px solid #ff2929;
-}
-
-.btn-secondary:hover {
-  background: #351010;
-}
-
-.note {
-  color: #888;
-  font-size: 12px;
+  text-decoration: none;
   text-align: center;
-  margin-top: 12px;
+  font-weight: bold;
+  border: 1px solid #ff7777;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff202044;
+}
+
+.btn:active {
+  transform: scale(.97);
+}
+
+section {
+  padding: 25px 15px;
+}
+
+h2 {
+  color: #ff3030;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.panel {
+  max-width: 750px;
+  margin: auto;
+  padding: 22px;
+  border: 1px solid #a71b1b;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #151515, #090909);
+}
+
+.intro {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 11px;
+  margin: 7px 0;
+  background: #202020;
+  border-left: 3px solid #ff2929;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+li span {
+  color: #ff2929;
+  margin-right: 8px;
+}
+
+.join-text {
+  margin-top: 22px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.channel {
+  text-align: center;
+  line-height: 1.8;
 }
 
 footer {
-  padding: 25px 15px;
-  background: #111;
-  border-top: 1px solid #ff2929;
+  padding: 25px 10px;
   text-align: center;
-  color: #888;
+  border-top: 1px solid #a71b1b;
+  color: #999;
   font-size: 12px;
   line-height: 2;
 }
@@ -190,9 +151,9 @@ footer strong {
   color: #ff2929;
 }
 
-@media (max-width: 380px) {
-  .logo { font-size: 34px; }
-  .hero h1 { font-size: 29px; }
+@media (min-width: 700px) {
+  .hero h1 { font-size: 42px; }
+  .panel { padding: 30px; }
 }
 </style>
 </head>
@@ -200,91 +161,83 @@ footer strong {
 <body>
 
 <header>
-  <div class="logo">MARGA 99</div>
+  <img class="logo"
+       src="marga99-logo.png"
+       alt="Logo MARGA 99">
   <p>COMMUNITY • SOLID • FAMILY 🔥</p>
 </header>
 
-<div class="hero">
-  <div class="tag">🔥 OPEN MEMBER</div>
+<main>
 
-  <h1>
-    WELCOME TO<br>
-    <span>MARGA 99</span>
-  </h1>
+<div class="hero">
+  <img class="hero-logo"
+       src="marga99-logo.png"
+       alt="MARGA 99">
+
+  <h1>NCC CAMPUR? SINI JOIN 🔥</h1>
 
   <p>
-    NCC CAMPUR? SINI JOIN MARGA 99!<br>
-    CC ASIK, SERING WAR SM LAGA 🔥
+    CC ASIK, SERING WAR SM LAGA<br>
+    SATU NAMA, SATU KEBERSAMAAN
   </p>
 
   <a class="btn"
      href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
-     target="_blank"
-     rel="noopener noreferrer">
-    JOIN MARGA 99 🔥
+     target="_blank" rel="noopener noreferrer">
+    🔥 JOIN MARGA 99
   </a>
 </div>
 
 <section>
-  <h2>🔥 OPEN MEMBER 🔥</h2>
+  <div class="panel">
+    <h2>🔥 OPEN MEMBER 🔥</h2>
 
-  <div class="box">
-    <div class="recruit-title">
-      NCC CAMPUR? <span>SINI JOIN!</span><br>
-      MARGA 99 🔥
-    </div>
-
-    <p class="desc">
+    <p class="intro">
+      <strong>NCC CAMPUR? SINI JOIN MARGA 99!</strong><br>
       CC ASIK, SERING WAR SM LAGA.<br>
       Sini gabung, sung PM aja 🤤
     </p>
 
-    <ul class="list">
-      <li><span>✦</span> N MEM LDS / BOY</li>
-      <li><span>✦</span> N MEM GILA WAR</li>
-      <li><span>✦</span> N MEM GOOD ATTITUDE</li>
-      <li><span>✦</span> N MEM JAGO</li>
-      <li><span>✦</span> N MEM YAPPING</li>
-      <li><span>✦</span> N MEM GA BISU</li>
-      <li><span>✦</span> N MEM AIM BRUTAL</li>
-      <li><span>✦</span> N MEM SUKA BUAT TREND</li>
-      <li><span>✦</span> N MEM PC / MOBI / HP</li>
+    <ul>
+      <li><span>★</span>N MEM LDS / BOY</li>
+      <li><span>★</span>N MEM GILA WAR</li>
+      <li><span>★</span>N MEM GOOD ATTITUDE</li>
+      <li><span>★</span>N MEM JAGO</li>
+      <li><span>★</span>N MEM YAPPING</li>
+      <li><span>★</span>N MEM GA BISU</li>
+      <li><span>★</span>N MEM AIM BRUTAL</li>
+      <li><span>★</span>N MEM SUKA BUAT TREND</li>
+      <li><span>★</span>N MEM PC / MOBI / HP</li>
     </ul>
 
-    <div class="join-text">
+    <p class="join-text">
       SINI JOIN, SUNG PM AJA 🤤🔥
-    </div>
+    </p>
 
     <a class="btn"
        href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
-       target="_blank"
-       rel="noopener noreferrer">
+       target="_blank" rel="noopener noreferrer">
       JOIN GRUP WHATSAPP
     </a>
-
-    <p class="note">
-      Klik tombol di atas untuk bergabung dengan MARGA 99.
-    </p>
   </div>
 </section>
 
 <section>
-  <h2>📢 SALURAN MARGA 99</h2>
+  <div class="panel channel">
+    <h2>📢 SALURAN MARGA 99</h2>
 
-  <div class="box">
-    <p class="desc">
-      Follow saluran WhatsApp kami untuk melihat
-      update, info, dan keseruan MARGA 99!
-    </p>
+    Follow saluran WhatsApp kami untuk melihat
+    update, info, dan keseruan MARGA 99!
 
-    <a class="btn btn-secondary"
+    <a class="btn"
        href="https://whatsapp.com/channel/0029VbDIlHd7IUYb2WCX723W"
-       target="_blank"
-       rel="noopener noreferrer">
+       target="_blank" rel="noopener noreferrer">
       FOLLOW SALURAN (SL) 📢
     </a>
   </div>
 </section>
+
+</main>
 
 <footer>
   <strong>MARGA 99 🔥</strong><br>
