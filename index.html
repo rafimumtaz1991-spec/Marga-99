@@ -4,115 +4,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090909">
-<title>MARGA 99 | Community Free Fire</title>
+<meta name="theme-color" content="#080808">
+<title>MARGA 99 🔥</title>
 
 <style>
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  background: #080808;
   color: white;
-  background: #090909;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 header {
-  padding: 18px 15px;
+  padding: 18px;
   text-align: center;
-  background: #111;
-  border-bottom: 2px solid #e32636;
-}
-
-.brand {
-  font-size: 25px;
+  background: #101010;
+  border-bottom: 2px solid #ff2525;
+  letter-spacing: 4px;
+  font-size: 24px;
   font-weight: 900;
-  letter-spacing: 3px;
   color: #ff3030;
+  text-shadow: 0 0 15px #ff0000;
 }
 
 .hero {
-  min-height: 430px;
-  padding: 45px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  background: radial-gradient(ellipse at top, #431010, #090909 70%);
+  padding: 25px 15px 45px;
+  background:
+    radial-gradient(ellipse at top, #521010 0%, #180909 38%, #080808 75%);
 }
 
 .logo {
-  width: 210px;
-  max-width: 75%;
-  height: auto;
   object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 18px #ff202088);
+}
+
+.logo-top {
+  width: 280px;
+  max-width: 85%;
+  animation: floatTop 3s ease-in-out infinite;
+}
+
+.logo-middle {
+  width: 170px;
+  max-width: 55%;
+  margin-top: 24px;
   margin-bottom: 22px;
-  filter: drop-shadow(0 0 15px #ff252566);
+  animation: spinGlow 4s ease-in-out infinite;
+}
+
+.logo-bottom {
+  width: 300px;
+  max-width: 90%;
+  margin-top: 30px;
+  animation: floatBottom 2.7s ease-in-out infinite;
+}
+
+@keyframes floatTop {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-12px) scale(1.04); }
+}
+
+@keyframes spinGlow {
+  0%, 100% {
+    transform: scale(1) rotate(-3deg);
+    filter: drop-shadow(0 0 10px #ff3030);
+  }
+  50% {
+    transform: scale(1.13) rotate(3deg);
+    filter: drop-shadow(0 0 28px #ff1717);
+  }
+}
+
+@keyframes floatBottom {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
 }
 
 h1 {
-  font-size: clamp(25px, 7vw, 42px);
-  line-height: 1.2;
-  margin-bottom: 15px;
+  font-size: clamp(27px, 7vw, 43px);
+  line-height: 1.25;
+  margin-top: 20px;
+  text-shadow: 0 0 15px #ff000066;
 }
 
 h1 span {
   color: #ff3030;
 }
 
-.hero p {
-  color: #ccc;
-  max-width: 500px;
-  margin-bottom: 24px;
+.subtitle {
+  color: #ddd;
+  margin: 16px 0 27px;
+  letter-spacing: 1px;
 }
 
-.button {
+.join-btn {
   display: inline-block;
-  padding: 13px 22px;
-  border-radius: 9px;
-  background: #e32636;
+  padding: 16px 28px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff3434, #a90000);
+  border: 1px solid #ff7777;
+  box-shadow: 0 0 18px #ff202066;
+  animation: joinPulse 1.3s ease-in-out infinite;
 }
 
-.button:hover {
-  background: #ff4655;
-  transform: translateY(-2px);
+@keyframes joinPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px #ff202066;
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ff2020bb;
+  }
+}
+
+.join-btn:active {
+  transform: scale(.94);
 }
 
 section {
-  max-width: 750px;
-  margin: auto;
   padding: 35px 20px;
+  max-width: 720px;
+  margin: auto;
 }
 
 h2 {
-  font-size: 25px;
   text-align: center;
   margin-bottom: 22px;
+  font-size: 25px;
 }
 
 h2 span {
   color: #ff3030;
-}
-
-.info {
-  background: #151515;
-  padding: 22px;
-  border: 1px solid #333;
-  border-radius: 14px;
-}
-
-.info p {
-  text-align: center;
-  color: #ddd;
 }
 
 .rules {
@@ -122,83 +159,106 @@ h2 span {
 }
 
 .rules li {
-  background: #191919;
-  padding: 13px 15px;
-  border-radius: 8px;
-  border-left: 4px solid #e32636;
+  background: #151515;
+  border: 1px solid #292929;
+  border-left: 4px solid #ff3030;
+  border-radius: 9px;
+  padding: 13px;
+  animation: appear 0.6s ease both;
 }
 
-.rules li::before {
-  content: "✓  ";
-  color: #ff3030;
-  font-weight: bold;
+@keyframes appear {
+  from { opacity: 0; transform: translateX(-15px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.info {
+  text-align: center;
+  color: #ccc;
+  background: #151515;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .links {
   display: grid;
-  gap: 14px;
+  gap: 22px;
   text-align: center;
 }
 
-.whatsapp {
-  background: #128c48;
-}
-
-.whatsapp:hover {
-  background: #16a858;
-}
-
-.channel {
-  background: #252525;
-  border: 1px solid #555;
+.channel-btn {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: #176e3b;
+  animation: joinPulse 1.8s ease-in-out infinite;
 }
 
 footer {
-  margin-top: 25px;
-  padding: 25px 15px;
   text-align: center;
-  color: #888;
+  padding: 25px 12px;
   background: #111;
-  border-top: 1px solid #292929;
+  color: #888;
   font-size: 13px;
+  border-top: 1px solid #333;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="brand">MARGA 99</div>
-  <p>FREE FIRE COMMUNITY</p>
-</header>
+<header>MARGA 99 🔥</header>
 
 <main>
   <div class="hero">
-    <!-- Letakkan marga99-logo.png satu folder dengan index.html -->
-    <img
-      class="logo"
+
+    <!-- LOGO BESAR DI ATAS -->
+    <img class="logo logo-top"
       src="./marga99-logo.png"
-      alt="Logo MARGA 99"
-      onerror="this.style.display='none'"
-    >
+      alt="Logo MARGA 99 atas">
 
     <h1>NCC CAMPUR?<br>
       SINI JOIN <span>MARGA 99 🔥</span>
     </h1>
 
-    <p>CC ASIK SERING WAR SM LAGA</p>
+    <p class="subtitle">CC ASIK SERING WAR SM LAGA</p>
 
-    <a class="button"
-       href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
-       target="_blank" rel="noopener">
-      JOIN GRUP SEKARANG
+    <!-- TOMBOL JOIN BERGERAK -->
+    <a class="join-btn"
+      href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
+      target="_blank" rel="noopener">
+      🔥 JOIN MARGA 99 🔥
     </a>
+
+    <!-- LOGO SEDANG DI TENGAH -->
+    <img class="logo logo-middle"
+      src="./marga99-logo.png"
+      alt="Logo MARGA 99 tengah">
+
+    <p style="color:#aaa">ONE FAMILY • ONE TEAM</p>
+
+    <!-- LOGO BESAR DI BAWAH -->
+    <img class="logo logo-bottom"
+      src="./marga99-logo.png"
+      alt="Logo MARGA 99 bawah">
   </div>
 
   <section>
     <h2>KENAPA HARUS <span>MARGA 99?</span></h2>
     <div class="info">
-      <p>Gabung bareng member yang siap seru-seruan, mabar, dan war bareng!</p>
+      Gabung bareng member MARGA 99 buat mabar, war, dan seru-seruan bareng!
     </div>
   </section>
 
@@ -218,26 +278,19 @@ footer {
   </section>
 
   <section>
-    <h2>GABUNG <span>SEKARANG</span></h2>
+    <h2>WHATSAPP <span>CHANNEL</span></h2>
     <div class="links">
-      <a class="button whatsapp"
-         href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
-         target="_blank" rel="noopener">
-        JOIN WHATSAPP GROUP
-      </a>
-
-      <a class="button channel"
-         href="https://whatsapp.com/channel/0029VbDIlHd7IUYb2WCX723W"
-         target="_blank" rel="noopener">
-        FOLLOW WHATSAPP CHANNEL
+      <a class="channel-btn"
+        href="https://whatsapp.com/channel/0029VbDIlHd7IUYb2WCX723W"
+        target="_blank" rel="noopener">
+        📢 FOLLOW CHANNEL MARGA 99
       </a>
     </div>
   </section>
 </main>
 
 <footer>
-  <p>© 2026 MARGA 99 COMMUNITY</p>
-  <p>ONE FAMILY • ONE TEAM • MARGA 99 🔥</p>
+  © 2026 MARGA 99 COMMUNITY 🔥
 </footer>
 
 </body>
