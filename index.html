@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MARGA 99 🔥</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>MARGA 99 | Community Free Fire</title>
 
 <style>
 * {
@@ -13,147 +15,152 @@
 }
 
 body {
-  background: #080808;
-  color: white;
   font-family: Arial, sans-serif;
+  color: white;
+  background: #090909;
+  line-height: 1.6;
 }
 
 header {
-  background: #101010;
-  border-bottom: 2px solid #ff2020;
-  padding: 12px;
+  padding: 18px 15px;
   text-align: center;
+  background: #111;
+  border-bottom: 2px solid #e32636;
 }
 
-.logo {
-  width: 190px;
-  max-width: 65%;
-  height: auto;
-  object-fit: contain;
-}
-
-header p {
-  color: #ccc;
-  font-size: 11px;
+.brand {
+  font-size: 25px;
+  font-weight: 900;
   letter-spacing: 3px;
+  color: #ff3030;
 }
 
 .hero {
+  min-height: 430px;
+  padding: 45px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 35px 16px 45px;
-  background:
-    radial-gradient(ellipse, #481010, #080808 75%);
+  background: radial-gradient(ellipse at top, #431010, #090909 70%);
 }
 
-.hero-logo {
-  display: block;
-  width: 100%;
-  max-width: 650px;
+.logo {
+  width: 210px;
+  max-width: 75%;
   height: auto;
-  margin: 0 auto 20px;
+  object-fit: contain;
+  margin-bottom: 22px;
+  filter: drop-shadow(0 0 15px #ff252566);
 }
 
-.hero h1 {
-  color: #ff2929;
-  font-size: 30px;
+h1 {
+  font-size: clamp(25px, 7vw, 42px);
+  line-height: 1.2;
   margin-bottom: 15px;
 }
 
-.hero p {
-  line-height: 1.8;
-  color: #ddd;
+h1 span {
+  color: #ff3030;
 }
 
-.btn {
-  display: block;
-  max-width: 340px;
-  margin: 20px auto 0;
-  padding: 15px;
-  background: #ed1010;
+.hero p {
+  color: #ccc;
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 9px;
+  background: #e32636;
   color: white;
   text-decoration: none;
-  text-align: center;
   font-weight: bold;
-  border: 1px solid #ff7777;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #ff202044;
+  transition: 0.2s;
 }
 
-.btn:active {
-  transform: scale(.97);
+.button:hover {
+  background: #ff4655;
+  transform: translateY(-2px);
 }
 
 section {
-  padding: 25px 15px;
+  max-width: 750px;
+  margin: auto;
+  padding: 35px 20px;
 }
 
 h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+h2 span {
   color: #ff3030;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
-.panel {
-  max-width: 750px;
-  margin: auto;
+.info {
+  background: #151515;
   padding: 22px;
-  border: 1px solid #a71b1b;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #151515, #090909);
+  border: 1px solid #333;
+  border-radius: 14px;
 }
 
-.intro {
+.info p {
   text-align: center;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  color: #ddd;
 }
 
-ul {
+.rules {
   list-style: none;
+  display: grid;
+  gap: 12px;
 }
 
-li {
-  padding: 11px;
-  margin: 7px 0;
-  background: #202020;
-  border-left: 3px solid #ff2929;
+.rules li {
+  background: #191919;
+  padding: 13px 15px;
+  border-radius: 8px;
+  border-left: 4px solid #e32636;
+}
+
+.rules li::before {
+  content: "✓  ";
+  color: #ff3030;
   font-weight: bold;
-  font-size: 14px;
 }
 
-li span {
-  color: #ff2929;
-  margin-right: 8px;
-}
-
-.join-text {
-  margin-top: 22px;
+.links {
+  display: grid;
+  gap: 14px;
   text-align: center;
-  font-weight: bold;
-  font-size: 17px;
+}
+
+.whatsapp {
+  background: #128c48;
+}
+
+.whatsapp:hover {
+  background: #16a858;
 }
 
 .channel {
-  text-align: center;
-  line-height: 1.8;
+  background: #252525;
+  border: 1px solid #555;
 }
 
 footer {
-  padding: 25px 10px;
+  margin-top: 25px;
+  padding: 25px 15px;
   text-align: center;
-  border-top: 1px solid #a71b1b;
-  color: #999;
-  font-size: 12px;
-  line-height: 2;
-}
-
-footer strong {
-  color: #ff2929;
-}
-
-@media (min-width: 700px) {
-  .hero h1 { font-size: 42px; }
-  .panel { padding: 30px; }
+  color: #888;
+  background: #111;
+  border-top: 1px solid #292929;
+  font-size: 13px;
 }
 </style>
 </head>
@@ -161,98 +168,76 @@ footer strong {
 <body>
 
 <header>
-  <img
-  src="marga99-logo.png"
-  alt="Logo MARGA 99"
-  style="
-    display: block;
-    width: 100%;
-    max-width: 650px;
-    height: auto;
-    margin: 0 auto;
-  "
->
-  <p>COMMUNITY • SOLID • FAMILY 🔥</p>
+  <div class="brand">MARGA 99</div>
+  <p>FREE FIRE COMMUNITY</p>
 </header>
 
 <main>
+  <div class="hero">
+    <!-- Letakkan marga99-logo.png satu folder dengan index.html -->
+    <img
+      class="logo"
+      src="./marga99-logo.png"
+      alt="Logo MARGA 99"
+      onerror="this.style.display='none'"
+    >
 
-<div class="hero">
-  <img
-  src="marga99-logo.png"
-  alt="MARGA 99"
-  style="width:190px;max-width:70%;height:auto"
->
+    <h1>NCC CAMPUR?<br>
+      SINI JOIN <span>MARGA 99 🔥</span>
+    </h1>
 
-  <h1>NCC CAMPUR? SINI JOIN 🔥</h1>
+    <p>CC ASIK SERING WAR SM LAGA</p>
 
-  <p>
-    CC ASIK, SERING WAR SM LAGA<br>
-    SATU NAMA, SATU KEBERSAMAAN
-  </p>
-
-  <a class="btn"
-     href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
-     target="_blank" rel="noopener noreferrer">
-    🔥 JOIN MARGA 99
-  </a>
-</div>
-
-<section>
-  <div class="panel">
-    <h2>🔥 OPEN MEMBER 🔥</h2>
-
-    <p class="intro">
-      <strong>NCC CAMPUR? SINI JOIN MARGA 99!</strong><br>
-      CC ASIK, SERING WAR SM LAGA.<br>
-      Sini gabung, sung PM aja 🤤
-    </p>
-
-    <ul>
-      <li><span>★</span>N MEM LDS / BOY</li>
-      <li><span>★</span>N MEM GILA WAR</li>
-      <li><span>★</span>N MEM GOOD ATTITUDE</li>
-      <li><span>★</span>N MEM JAGO</li>
-      <li><span>★</span>N MEM YAPPING</li>
-      <li><span>★</span>N MEM GA BISU</li>
-      <li><span>★</span>N MEM AIM BRUTAL</li>
-      <li><span>★</span>N MEM SUKA BUAT TREND</li>
-      <li><span>★</span>N MEM PC / MOBI / HP</li>
-    </ul>
-
-    <p class="join-text">
-      SINI JOIN, SUNG PM AJA 🤤🔥
-    </p>
-
-    <a class="btn"
+    <a class="button"
        href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
-       target="_blank" rel="noopener noreferrer">
-      JOIN GRUP WHATSAPP
+       target="_blank" rel="noopener">
+      JOIN GRUP SEKARANG
     </a>
   </div>
-</section>
 
-<section>
-  <div class="panel channel">
-    <h2>📢 SALURAN MARGA 99</h2>
+  <section>
+    <h2>KENAPA HARUS <span>MARGA 99?</span></h2>
+    <div class="info">
+      <p>Gabung bareng member yang siap seru-seruan, mabar, dan war bareng!</p>
+    </div>
+  </section>
 
-    Follow saluran WhatsApp kami untuk melihat
-    update, info, dan keseruan MARGA 99!
+  <section>
+    <h2>SYARAT <span>MEMBER</span></h2>
+    <ul class="rules">
+      <li>N MEM LDS / BOY</li>
+      <li>N MEM GILA WAR</li>
+      <li>N MEM GOOD ATTITUDE</li>
+      <li>N MEM JAGO</li>
+      <li>N MEM YAPPING</li>
+      <li>N MEM GA BISU</li>
+      <li>N MEM AIM BRUTAL</li>
+      <li>N MEM SUKA BUAT TREND</li>
+      <li>N MEM PC / MOBI / HP</li>
+    </ul>
+  </section>
 
-    <a class="btn"
-       href="https://whatsapp.com/channel/0029VbDIlHd7IUYb2WCX723W"
-       target="_blank" rel="noopener noreferrer">
-      FOLLOW SALURAN (SL) 📢
-    </a>
-  </div>
-</section>
+  <section>
+    <h2>GABUNG <span>SEKARANG</span></h2>
+    <div class="links">
+      <a class="button whatsapp"
+         href="https://chat.whatsapp.com/FF42iYsclzxErxRvkduVLd?s=cl&p=a&mlu=4&ilr=4"
+         target="_blank" rel="noopener">
+        JOIN WHATSAPP GROUP
+      </a>
 
+      <a class="button channel"
+         href="https://whatsapp.com/channel/0029VbDIlHd7IUYb2WCX723W"
+         target="_blank" rel="noopener">
+        FOLLOW WHATSAPP CHANNEL
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <strong>MARGA 99 🔥</strong><br>
-  Satu nama, satu kebersamaan.<br>
-  © 2026 MARGA 99
+  <p>© 2026 MARGA 99 COMMUNITY</p>
+  <p>ONE FAMILY • ONE TEAM • MARGA 99 🔥</p>
 </footer>
 
 </body>
